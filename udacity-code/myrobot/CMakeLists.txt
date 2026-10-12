@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+project(myrobot)
 
 # Find and link to Gazebo libraries
 find_package(gazebo REQUIRED)
@@ -9,4 +10,3 @@ list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 # Add the plugin library and link it to Gazebo
 add_library(hello SHARED script/hello.cpp)
 target_link_libraries(hello ${GAZEBO_LIBRARIES})
-project(myrobot)
