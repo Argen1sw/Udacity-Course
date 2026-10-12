@@ -11,7 +11,7 @@ namespace gazebo
             // Constructor for WorldPluginMyRobot class 
             WorldPluginMyRobot() : WorldPlugin() 
             {
-                printf("Hello World!\n");
+                printf("Welcome to Wong's World!\n");
             }
             // Load function is called by gazebo when loading the plugin.
             void Load(physics::WorldPtr _world, sdf::ElementPtr _sdf)
